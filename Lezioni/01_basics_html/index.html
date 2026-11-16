@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title>
+
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif; 
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center; 
+         
+          padding-top:50px;
+        }
+
+         .profile-card{
+            background-color: white;
+            width:100%; 
+            max-width: 600px;
+            box-shadow: 0 4px 8px gainsboro;
+            padding: 30px; 
+            text-align: center;
+            border-radius: 15px;
+            box-sizing: border-box;
+        } 
+
+         .profile-img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid rgb(64, 141, 241);
+            margin-bottom: 15px;
+        }
+
+        h2{
+            color: #333333;
+            margin: 0 0 5px 0; 
+        }
+
+        .subtitle{
+            color: #6c757d;
+            margin-top: 0;
+            margin-bottom:20px;
+        }
+
+        hr{
+            border: 0;
+            border-top: 1px solid #eeeeee; 
+            margin: 20px 0; 
+        }
+
+                                                
+        h4{
+            text-align: left;
+            color:#333333;
+        }
+
+        table{
+            width: 100%;
+            margin-top:15px;
+            text-align: left;
+            border-collapse: collapse;
+        }
+
+        thead{
+            background-color: rgb(64, 141, 241);
+            color: white;
+        }
+
+        th, td{
+            padding: 12px 15px;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        tbody tr:nth-child(even){
+            background-color: #f8f9fa;
+        }
+
+        tbody tr:hover{
+            background-color: #e2e6ea;
+            cursor: pointer;
+        } 
+
+        button{
+            width: 150px;
+            height: 50px;;
+            background-color: rgb(64, 141, 241);
+            color: white;
+            margin-top: 20px;
+
+        }
+    </style>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+    <div class="profile-card">
+        <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4if8z7Fr49Cx-JRrGIjzcz0Cuj_kCo5h1nuNB2Djv1A&s=10" alt="Foto profilo" class="profile-img" >
+        <h2> Davide Oliva </h2>
+        <p class="subtitle"> Studente di Informatica </p>
+
+      <hr>
+
+        <h4> Competenze acquisite: </h4>
+
+        <table>
+            <thead>
+                <tr>
+                    <th> Materia </th>
+                    <th> Livello </th>
+                    <th> Voto atteso </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> HTML5 & CSS3 </td>
+                    <td> Avanzato     </td>
+                    <td> 9            </td>
+                </tr>
+                <tr>
+                    <td> CSS grid e Flexbox </td>
+                    <td> Intermedio         </td>
+                    <td> 8                  </td>
+                </tr>
+                <tr>
+                    <td> Sviluppo Layout </td>
+                    <td> Buono           </td>
+                    <td> 8.5             </td>
+                </tr>
+            </tbody>
+        </table>
+            <button type="button" class="btn btn-primary">Contattami</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>
